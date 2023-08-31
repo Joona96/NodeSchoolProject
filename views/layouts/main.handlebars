@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{pagetitle}} - Fanisivu.org </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <!-- Header alkaa-->
+        <header>     
+        <div class="row fixed-top">
+
+    <!--Skip to content link -->
+    <a class="skip-to-content-link" href="#main">Siirry suoraan sivun pääsisältöön</a> 
+
+            <div class="col-md-12 nopadding">
+                <nav class="navbar navbar-expand-xl navbar-light bg-light">
+
+                        <ul class="col-md-8 otsikko navbar-nav align-items-center nav-fill w-100">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">
+                                Etusivu
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blogi">
+                                    Blogi
+                                    </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="kauppa">
+                                    Kauppa
+                                    </a>
+                            </li>                            
+                        </ul>
+                </nav>
+            </div>                
+        </div>
+        </header>
+    </div>        
+        <!-- Header loppuu-->        
+        <!-- Tyhjä valkoinen väli-->
+        <div class="row" style="height: 330px;">
+            <div class="col-md-12"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 parallax-container">
+            <!-- Main content alkaa tästä -->
+            <div class="container">
+                <main id="main">
+                {{{body}}}                                 
+                </main>
+            </div> 
+            <!-- Main content päättyy tähän -->                               
+            </div>             
+        </div>                     
+        <!-- Tyhjä valkoinen väli-->
+        <div class="row" style="height: 30px;">
+            <div class="col-md-12 nopadding"></div>
+        </div>
+
+        </div>
+        <!-- Footer alku-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 nopadding">
+                <footer>
+                <div class="col-md-4 text-center">
+                    <a class="footer-link1 text-center" href="login">Admin login</a><br>
+                    <a class="footer-link1" href="logout">Admin logout</a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2>© Fanisivu.org</h2>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a class="footer-link2" href="saavutettavuus">Saavutettavuus</a>
+                </div>
+                </footer>
+                </div>
+            </div>
+        </div>        
+        <!-- Footer loppu-->
+    
+    </div>
+    <!-- Bootstrap-kamaa-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>   
+</body>
+</html>
